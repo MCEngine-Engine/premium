@@ -1,0 +1,27 @@
+name: MCEnginePremium
+main: io.github.mcengine.spigotmc.premium.engine.MCEnginePremiumSpigotMC
+version: ${version}
+api-version: '1.20'
+author: MCEngine
+
+commands:
+  premium:
+    description: Premium rank management commands
+    usage: /premium
+    permission: mcengine.premium.use
+
+permissions:
+  mcengine.premium.use:
+    default: true
+  mcengine.premium.rank.create:
+    description: Allows creating premium rank tables
+    default: op
+  mcengine.premium.rank.upgrade:
+    description: Allows upgrading own premium rank
+    default: op
+  mcengine.premium.rank.get:
+    description: Allows checking own premium rank
+    default: true
+  mcengine.premium.rank.get.players:
+    description: Allows checking other players' premium ranks
+    default: op

@@ -1,0 +1,25 @@
+enable: false
+license: free
+
+database:
+  type: sqlite  # sqlite | mysql | postgresql
+
+  sqlite:
+    path: premium.db
+
+  mysql:
+    host: localhost
+    port: "3306"
+    name: mcengine_premium
+    user: root
+    password: ""
+
+  postgresql:
+    host: localhost
+    port: "5432"
+    name: mcengine_premium
+    user: postgres
+    password: ""
+
+github:
+  token:
