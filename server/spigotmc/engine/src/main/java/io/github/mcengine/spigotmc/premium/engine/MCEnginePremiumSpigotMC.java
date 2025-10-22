@@ -30,9 +30,11 @@ public class MCEnginePremiumSpigotMC extends JavaPlugin {
             return;
         }
 
-        final String licenseType = getConfig().getString("license", "premium");
-        if (!"free".equalsIgnoreCase(licenseType)) {
-            getLogger().warning("License is not 'free'. Disabling MCEnginePremium.");
+        String license = getConfig().getString("licenses.license", "free"); 
+        if (!license.equalsIgnoreCase("free")) { 
+            getLogger().warning("Plugin is disabled in config.yml.");
+            getLogger().warning("Invalid license.");
+            getLogger().warning("Check license or use \"free\".");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
