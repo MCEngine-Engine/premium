@@ -5,7 +5,7 @@ plugins {
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.21.8-R0.1-SNAPSHOT'
 
-    implementation 'io.github.mcengine:core-api:2025.1.1-7'
+    implementation 'io.github.mcengine:core-api:2025.1.1-11'
     implementation "io.github.mcengine:premium-api:2025.0.9-6"
     implementation "io.github.mcengine:premium-common:2025.0.9-6-2"
 }
